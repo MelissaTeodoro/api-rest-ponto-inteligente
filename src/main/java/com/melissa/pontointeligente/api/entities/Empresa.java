@@ -13,16 +13,16 @@ public class Empresa implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(name = "razao_social", nullable = false)
+    @Column(nullable = false)
     private String razaoSocial;
 
-    @Column(name = "cnpj", nullable = false)
+    @Column(nullable = false)
     private String cnpj;
 
-    @Column(name = "data_criacao", nullable = false)
+    @Column(nullable = false)
     private Date dataCriacao;
 
-    @Column(name = "data_atualizacao", nullable = false)
+    @Column(nullable = false)
     private Date dataAtualizacao;
 
     @OneToMany(mappedBy = "empresa", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
