@@ -27,20 +27,6 @@ create table funcionario
     primary key (id)
 ) engine = InnoDB;
 
-create table hibernate_sequence
-(
-    next_val bigint
-) engine = InnoDB;
-
-insert into hibernate_sequence
-values (1);
-
-insert into hibernate_sequence
-values (1);
-
-insert into hibernate_sequence
-values (1);
-
 create table lancamento
 (
     id               bigint       not null,
